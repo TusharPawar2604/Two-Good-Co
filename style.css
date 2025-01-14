@@ -9,6 +9,7 @@ html,body{
 }
 body{
     background-color: #F7F7F7;
+    overflow: hidden;
 
 }
 *::selection{
@@ -314,18 +315,18 @@ scale: 1.1;
 #connect h2{
     font-size: 1.25vw;
     opacity: 0.5;
-    margin-bottom: 1vw;
+    margin-bottom: 1.5vw;
 }
 #connect h3{
     font-size: 1vw;
-    margin-top: 0.2vw;
+    margin-top: 0.5vw;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
 }
 #nitty h2{
     font-size: 1.25vw;
     opacity: 0.5;
-    margin-bottom: 1vw;
+    margin-bottom: 1.5vw;
 }
 #nitty h3{
     font-size: 1vw;
