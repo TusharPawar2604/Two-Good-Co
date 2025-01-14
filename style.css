@@ -1,0 +1,560 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html,body{
+   height: 100%;
+   width: 100%;
+}
+body{
+    background-color: #F7F7F7;
+
+}
+*::selection{
+    color: white;
+    background-color: black;
+}
+#cursor{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgba(255, 209, 217, 0.648);
+    position: fixed;
+    transform: translate(-50%,-50%) scale(0);
+}
+nav{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    padding: 40px;
+    position: fixed;
+    z-index: 99;
+}
+#nav-part1{
+    height: 82px;
+}
+#nav-part1 svg{
+    display: block;
+}
+nav #nav-part2{
+    display: flex;
+    align-items: center;
+}
+nav #nav-part2 a{
+    text-decoration: none;
+    text-transform: uppercase;
+   font-family:roboto;
+   font-weight: 600;
+    color: #000;
+    margin: 0 20px;
+}
+#nav-part2 #icons{
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+#nav-part2 #icons i{
+    margin: 0 20px;
+    font-weight: 900;
+}
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0 1vw;
+    padding-top: 20vh;
+}
+#page1 h1 {
+    font-family: futura;
+    font-size: 15vw;
+    text-transform: uppercase;
+    line-height: 12.5vw;
+}
+#video-container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    margin-top: 1vw;
+}
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#video-container #play{
+    padding: 3.5vw 2.7vw;
+    opacity: 0;
+    scale: 0;
+    background-color: black;
+    color: white;
+    font-family: futura;
+    font-size: 1.2vw;
+    border-radius: 50%;
+    position: fixed;
+}
+#page1 h2{
+    font-family: futura;
+    font-size: 3.5vw;
+    text-align: center;
+    margin: 8vw 0 0 0;
+}
+#page1 p{
+    font-family: futura;
+    margin-top: 2vw;
+    text-align: center;
+}
+hr{
+    margin: 1vw 0;
+}
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    padding: 3vw 1vw;
+    overflow: hidden;
+}
+.elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+}
+.elements .elem{
+    height: 100%;
+    width: 31%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+}
+#page2 .elements .elem img{
+    height: 100%;
+    width: 100%;
+object-fit: cover;
+scale: 1.1;
+}
+#middle-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: futura;
+    padding: 2vw 2vw;
+    margin-top: 5vw;
+}
+#middle-text h1{
+    font-size:4vw;
+    letter-spacing: -1.5px;
+    line-height: 8.5vh;
+}
+#second-middle p{
+    margin-bottom: 1.5vw;
+    font-family: roboto;
+    font-size: 1.2vw;
+}
+#second-middle button{
+    padding: 1vw 1.5vw;
+    background-color: black;
+    color: white;
+    font-family: arial;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+}
+#dets{
+    height: 60px;
+    border-radius: 50px;
+    width: 350px;
+    transition: all ease 0.3s;
+    z-index: 9;
+    background-color: pink;
+    position: absolute;
+}
+
+
+
+#page3{
+    min-height: 120vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#page3 .child{
+    height: 50vh;
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#page3 .child img{
+    height: 100%;
+}
+#page4{
+    min-height: 100vh; 
+     width: 100%;
+     padding-top: 2vw;
+     font-family: futura;
+     text-align: center;
+     background-color: #F7F7F7;
+ }
+ #page4 h1{
+     font-size: 4.5vw;
+     line-height: 10vh;
+     font-weight: 600;
+ }
+ #page4 button{
+     padding: 1.5vw 5.5vw;
+     background-color: black;
+     color: white;
+     font-weight: 600;
+     margin-top: 5vw;
+     border-radius: 50px;
+ }
+ #page4 p{
+     font-family: arial;
+     font-weight: 400;
+     margin-top: 3vw;
+    }
+    
+    #page5{
+    padding: 2vw 1vw;
+    min-height: 100vh;
+    width: 100%;
+    gap: 2.5vw;
+    display: flex;
+    background-color: #F7F7F7;
+    
+ }
+ #middle-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ #page5-first-div{
+    height: 95vh;
+    width: 32%;
+    font-family: futura;
+ }
+#first-image-div{
+    height: 95vh;
+    width: 47%;
+}
+#page5-first-div h3{
+    font-weight: 400;
+    font-family: sans-serif;
+    margin-top: 2vw;
+    font-size: 1.125vw;
+}
+#page5-first-div p{
+    margin-top: 2vw;
+    border-bottom: 1px solid black;
+    padding-bottom: 1vw;
+}
+#second-image-div{
+    height: 95vh;
+    width: 47%;
+}
+#page5 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page6{
+    height: 110vh;
+    width: 100%;
+    padding: 0 2vw;
+    font-family: futura;
+
+}
+#mail-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: futura;
+}
+#mail-box h1{
+    font-size: 2.65vw;
+}
+#terms{
+    height: 40vh;
+    width: 100%;
+    margin-top: 13.5vw;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#simbol svg{
+    height: 30vh;
+}
+#policy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#privacy{
+    display: flex;
+    gap: 4vw;
+    margin-top: 3vw;
+}
+#privacy h2{
+    font-size: 1vw;
+    font-weight: 500;
+    font-family: gilroy;
+}
+#connect h2{
+    font-size: 1.25vw;
+    opacity: 0.5;
+    margin-bottom: 1vw;
+}
+#connect h3{
+    font-size: 1vw;
+    margin-top: 0.2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+#nitty h2{
+    font-size: 1.25vw;
+    opacity: 0.5;
+    margin-bottom: 1vw;
+}
+#nitty h3{
+    font-size: 1vw;
+    margin-top: 0.2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+#last-para{
+    width: 65%;
+    /* background-color: red; */
+    margin-top: 10vh;
+}
+#bottom-para{
+    display: flex;
+    width: 100%;
+    place-content: center;
+}
+#last-para h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    opacity: 0.5;
+    text-align: center;
+    margin-bottom: 0.5vw;
+    text-transform: uppercase;
+}
+#last-para p{
+    font-size: 1vw;
+    line-height: 2.7vh;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width:600px) {
+    #page1{
+        min-height: 65vh;
+        padding: 0 3vw;
+        padding-top: 25vh;
+    }
+    #page1 h1 {
+        font-size: 14.5vw;
+    }
+    #video-container{
+        height: 25vh;
+        margin-top: 3vw;
+    }
+    #video-container #play{
+        padding: 7vw 4.5vw;
+        opacity: 1;
+        scale: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 4.5vw;
+        position: absolute;
+    }
+    .elements{
+        min-height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        padding: 3vw 3vw;
+    }
+    #page2 .elem{
+        height: 50vh;
+        width: 100%;
+        margin-bottom: 6vw;
+    }
+    .elements .elem{
+        height: 50vh;
+        width: 31%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+       
+    }
+    #dets{
+        height: 50px;
+        width: 250px;
+    }
+    #middle-text{
+        display: inline;
+        text-align: center;
+    }
+    #middle-text h1{
+        font-size:9vw;
+        letter-spacing: -1.5px;
+        line-height: 5vh;
+    }
+    #second-middle p{
+        font-size: 4vw;
+        margin-top: 4vw;
+    }
+    #second-middle button{
+        padding: 4.5vw 5vw;
+        background-color: black;
+        color: white;
+        margin-top: 3vw;
+        font-family: arial;
+        font-weight: 700;
+        border: none;
+        border-radius: 50px;
+    }
+    #page3{
+        flex-direction: column;
+    }
+    #nav-part2 #links{
+        display: none;
+    }
+    #page4 h1{
+        font-size: 4.5vw;
+        line-height: 3vh;
+    }
+    #page4 button{
+        padding: 4.5vw 15.5vw;
+    }
+    #page4 p{
+        margin-top: 10vw;
+    }
+  #page4{
+    min-height: 50vh;
+    padding-top: 10vw;
+  }
+  #page5{
+   min-height: 50vh;
+   width: 100%;
+   flex-direction: column;
+   
+}
+#page5-first-div{
+   height: 35vh;
+   width: 100%;
+   text-align: center;
+}
+#middle-div{
+padding: 0 2vw;
+height: 30vh;
+gap: 2vw;
+margin-top: 15vh;
+}
+#first-image-div{
+   height: 100%;
+   width: 50%;
+}
+#page5-first-div h3{
+   margin-top: 7vw;
+   font-size: 4vw;
+}
+#page5-first-div p{
+   margin-top: 7vw;
+   padding-bottom: 1vw;
+}
+#second-image-div{
+   height: 100%;
+   width: 50%;
+}
+#page6{
+    margin-top: 15vw;
+    height: 100vh;
+    position: relative;
+    min-height: 105vh;
+
+}
+#mail-box h1{
+    font-size: 8vw;
+}
+#terms{
+    flex-direction: column;
+    align-items: flex-start;
+}
+#privacy{
+    position: absolute;
+    margin-bottom: 1vw;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+#privacy h2{
+    font-size: 4vw;
+    font-weight: 500;
+    font-family: gilroy;
+}
+#connect h2{
+    font-size: 4vw;
+    margin-bottom: 1vw;
+    opacity: 0.5;
+}
+#connect h3{
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    margin-top: 0.5vw;
+}
+#nitty h2{
+    font-size: 4vw;
+    opacity: 0.5;
+    margin-bottom: 1vw;
+}
+#nitty h3{
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    margin-top: 0.5vw;
+}
+#last-para{
+    width: 100%;
+    margin: 2vw 0 2vw 0;
+    padding: 0vw 2vw 0vw 0vw;
+    margin-top: 10vh;
+}
+#bottom-para{
+    display: flex;
+    width: 100%;
+    place-content: center;
+}
+#last-para p{
+    font-size: 3vw;
+    line-height: 2.5vh;
+    margin-top: 2vw;
+    text-align:start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#simbol{
+    margin: 4vw 0vw 4vw 0;
+}
+#simbol svg{
+    height: 10vh;   
+}
+#last-para h1{
+   text-align: left;
+   font-size: 5vw;
+}
+    
+}
